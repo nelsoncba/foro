@@ -35,6 +35,7 @@ abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
         if ($this->defaultUser) {
             return $this->defaultUser;
         }
+
         return $this->defaultUser = factory(User::class)->create();
     }
 }
